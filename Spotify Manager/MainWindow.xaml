@@ -5,10 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Spotify_Manager" WindowStartupLocation="CenterScreen"
         mc:Ignorable="d" ResizeMode="CanMinimize" FontFamily="Segoe UI, Microsoft YaHei UI"
-        Title="Spotify Font &amp; Language Manager" Height="330" Width="300">
+        Title="Spotify Font &amp; Language Manager" Height="350" Width="300">
     <Grid>
         <StackPanel Margin="0,10">
             <TextBlock Text="修改前请关闭正在运行的 Spotify 实例！" Margin="20,5" Foreground="Red" FontWeight="Bold"/>
+            <TextBlock Text="本工具不支持 Store 版本的 Spotify！" Margin="20,5" Foreground="Red" FontWeight="Bold"/>
             <Button Name="BtnZHCN" Content="设置语言为简体中文" Margin="20,5" Height="30" Click="BtnZHCN_Click"/>
             <Button Name="BtnZHTW" Content="設置語言爲繁體中文" Margin="20,5" Height="30" Click="BtnZHTW_Click"/>
             <Button Name="BtnEN" Content="Set Language to English" Margin="20,5" Height="30" Click="BtnEN_Click"/>
