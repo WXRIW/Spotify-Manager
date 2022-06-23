@@ -1,0 +1,23 @@
+﻿<Window x:Class="Spotify_Manager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Spotify_Manager" WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d" ResizeMode="CanMinimize" FontFamily="Segoe UI, Microsoft YaHei UI"
+        Title="Spotify Font &amp; Language Manager" Height="330" Width="300">
+    <Grid>
+        <StackPanel Margin="0,10">
+            <TextBlock Text="修改前请关闭正在运行的 Spotify 实例！" Margin="20,5" Foreground="Red" FontWeight="Bold"/>
+            <Button Name="BtnZHCN" Content="设置语言为简体中文" Margin="20,5" Height="30" Click="BtnZHCN_Click"/>
+            <Button Name="BtnZHTW" Content="設置語言爲繁體中文" Margin="20,5" Height="30" Click="BtnZHTW_Click"/>
+            <Button Name="BtnEN" Content="Set Language to English" Margin="20,5" Height="30" Click="BtnEN_Click"/>
+            <Button Name="BtnFont" Content="优化中文字体" Margin="20,5" Height="30" Click="BtnFont_Click"/>
+            <Button Name="BtnAuto" Content="一键优化" Margin="20,5" Height="30" Click="BtnAuto_Click"/>
+        </StackPanel>
+        <StackPanel VerticalAlignment="Bottom" Margin="20,10">
+            <TextBlock Text="Made with ❤ by WXRIW"/>
+            <TextBlock Text="最适用版本：1.1.88.612.gcc529952"/>
+        </StackPanel>
+    </Grid>
+</Window>
